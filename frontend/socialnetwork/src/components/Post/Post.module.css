@@ -1,0 +1,370 @@
+.postfeedcontainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  width: 60%;
+  height: 90%;
+  margin-bottom: 10%;
+  overflow-y: auto;
+
+  /* Style the entire scrollbar */
+  scrollbar-width: thin;
+  /* For Firefox */
+  scrollbar-color: #fa4d6a #fafafa;
+  /* thumb color, track color */
+}
+
+/* Style the thumb (draggable part) of the scrollbar */
+.postfeedcontainer::-webkit-scrollbar-thumb:vertical {
+  background-color: #fa4d6a;
+  border-radius: 6px;
+}
+
+/* Style the track (background) of the scrollbar */
+.postfeedcontainer::-webkit-scrollbar-track {
+  background-color: #fafafa;
+}
+
+.postcontainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  width: 60%;
+  height: auto;
+  margin: 2%;
+  padding: 2%;
+  z-index: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.postmodalcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+}
+
+.postcommentscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  margin: 2%;
+  height: 90%;
+  width: 40%;
+}
+
+.addcommentcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.commentformcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  margin: 2%;
+  margin-bottom: 1%;
+}
+
+.postHeaderInfoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 85%;
+  height: auto;
+}
+
+.postHeaderInfoContainer>* {
+  margin: 2%;
+}
+
+.postHeaderInfoContainer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.postHeaderInfoContainer p {
+  color: lightslategrey;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.postHeaderInfoContainer a:hover {
+  text-decoration: underline;
+}
+
+.postactionscontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 80%;
+  height: auto;
+}
+
+.postcontentcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  margin-bottom: 2%;
+}
+
+.postimagecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  margin-bottom: 2%;
+}
+
+.postactionscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  color: #606266;
+}
+
+.postactionsubcontainer,
+.postactionscontainer form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  margin: 1%;
+}
+
+.postactionsubcontainerbottom {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+
+}
+
+.postactioninfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.postactionspan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.postactionspan>*:hover {
+  cursor: pointer;
+}
+
+.postaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postactionsubcontainer button {
+  background-color: white;
+  color: #fa4d6a;
+  font-size: 0.9rem;
+}
+
+.postactionsubcontainer button:hover {
+  color: #fa8fa1;
+  width: 80%;
+  height: auto;
+  margin: 2%;
+}
+
+.postcontentcontainer>* {
+  margin: 2%;
+}
+
+.profilepiccontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 20%;
+}
+
+.profileIconStyle {
+  font-size: 3.5rem;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.createpostcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 40%;
+  height: auto;
+  background-color: #fafafa;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.selectableprofilescontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 30%;
+  width: 70%;
+  overflow-y: auto;
+  background-color: rgb(233, 236, 242);
+  border-radius: 10px;
+}
+
+.formwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  font-size: 1.5rem;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  height: 80%;
+}
+
+.inputgroup {
+  display: block;
+  width: 80%;
+  margin: 15px;
+}
+
+.inputgrouprow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: left;
+  margin: 1px;
+  padding: 1px;
+  align-items: center;
+  width: 100%;
+}
+
+.checkbox input {
+  margin-left: 5%;
+}
+
+.checkbox label {
+  text-transform: none;
+  margin-left: 5%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+textarea {
+  outline: none;
+  background: #fafafa;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 3%;
+  margin: 5px 0;
+  font-size: 1.5rem;
+  background-color: #f0f2f5;
+}
+
+textarea {
+  resize: none;
+  height: auto;
+  background-color: #f0f2f5;
+}
+
+button {
+  width: 100%;
+  padding: 3.5%;
+  margin: 2% 0;
+  background-color: #fa4d6a00;
+  border-radius: 5px;
+  color: #fa4d6a;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+button:hover {
+  color: #fa8fa1;
+}
+
+.postpic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 2%;
+}

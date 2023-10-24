@@ -1,0 +1,245 @@
+.profilepostsgridcontainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    width: 60%;
+    height: 80%;
+    overflow-y: auto;
+
+    /* Style the entire scrollbar */
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #fa4d6a #fafafa;
+    /* thumb color, track color */
+}
+
+/* Style the thumb (draggable part) of the scrollbar */
+.postfeedcontainer::-webkit-scrollbar-thumb:vertical {
+    background-color: #fa4d6a;
+    border-radius: 6px;
+}
+
+.postcontainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    width: 60%;
+    height: auto;
+    margin: 2%;
+    padding: 2%;
+    z-index: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.postmodalcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+
+.postcommentscontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    margin: 2%;
+    height: 90%;
+    width: 40%;
+}
+
+.commentformcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    margin: 2%;
+    margin-bottom: 1%;
+}
+
+.profilecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 90%;
+    height: 100%;
+    z-index: 0;
+}
+
+.profilecontainer>* {
+    margin: 10px;
+}
+
+.profileheadercontainer {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    height: 40%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.profileheadercontainer a {
+    color: #fa4d6a;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.profileheadercontainer a:hover {
+    color: #fa879a;
+}
+
+.displaypicturecontainer {
+    width: 18%;
+    height: 95%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.profileIconStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 1000%;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.nameinfocontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    height: 100%;
+    width: auto;
+    margin: 10px;
+}
+
+.otherprofileinfocontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+
+}
+
+.profilestatscontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.profilestatscontainer button {
+    width: 100%;
+    background-color: #fa4d6a00;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-size: 1.5rem;
+    text-decoration-color: #fa4d6a;
+    font-weight: 500;
+}
+
+.aboutmecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+    width: 100%;
+    height: 20%;
+}
+
+.personaldetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personaldetails>* {
+    padding: 2%;
+    border-top: 0.2mm solid gray;
+}
+
+.editprofilecontainer {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90%;
+    width: 60%;
+    overflow-y: auto;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.editprofilecontainer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.listUsers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80%;
+    width: 80%;
+    overflow-y: auto;
+}
+
+.listUsers>* {
+    margin: 2%;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #fa4d6a;
+}
+
+.listUsers>*:hover {
+    font-weight: 600;
+}
